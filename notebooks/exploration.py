@@ -80,3 +80,8 @@ plt.xlabel("Région")
 plt.ylabel("Nombre de patients")
 plt.show()
 
+print("\n--- Nombre de patients par sexe et par diagnostic ---")
+patients_par_sexe_diag = df.groupby(["sexe", "diagnostic"]).size()
+print(patients_par_sexe_diag)
+
+
